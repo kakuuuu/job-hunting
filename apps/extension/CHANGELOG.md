@@ -1,3 +1,7 @@
+## 3.4.1 (2025-02-20)
+
+测试 action
+
 ## 3.4.0 (2025-02-19)
 
 ### 🚀 Features
@@ -60,7 +64,7 @@
 
 - 优化职位偏好查询
 
-- 默认关闭开发模式下的SQL分析功能
+- 默认关闭开发模式下的 SQL 分析功能
 
 ### ❤️ Thank You
 
@@ -90,14 +94,14 @@
 
 ### ⚠️ Noteworthy
 
-1. 升级到3.x.x,由于底层数据库的更换,所有本地数据将会失效,有两种方法恢复数据:
-    1. 开启数据共享计划,重新添加伙伴后,程序会自动进行数据的同步。
-    2. 版本升级前，使用全量导出功能（职位数据，公司数据，职位标签数据，公司标签数据）导出数据,版本升级后，将导出的数据重新导入.
+1. 升级到 3.x.x,由于底层数据库的更换,所有本地数据将会失效,有两种方法恢复数据:
+   1. 开启数据共享计划,重新添加伙伴后,程序会自动进行数据的同步。
+   2. 版本升级前，使用全量导出功能（职位数据，公司数据，职位标签数据，公司标签数据）导出数据,版本升级后，将导出的数据重新导入.
 2. 数据库导出和数据库恢复功能暂不可用.
 
 ### 💣 BREAKING CHANGES
 
-1. 底层数据库更换:SQLite更换为PGlite.
+1. 底层数据库更换:SQLite 更换为 PGlite.
 
 ### 🚀 Performance
 
@@ -113,7 +117,7 @@
 
 ### 🚀 Performance
 
-1. 添加bridge invoke性能检测逻辑(开发模式下默认开启).
+1. 添加 bridge invoke 性能检测逻辑(开发模式下默认开启).
 2. (ContentScript)减少职位标签的查询次数.
 3. 提升部份查询的性能.(添加索引涉及的表有:job,job_browse_history,company_tag,job_tag)
 
@@ -133,8 +137,8 @@
 
 ### ✏️ Changed
 
-1. 公司数据有效时间改为180天.
-2. 共享数据追溯天数改为365天.
+1. 公司数据有效时间改为 180 天.
+2. 共享数据追溯天数改为 365 天.
 
 ## 2.6.4 (2025-01-09)
 
@@ -162,13 +166,13 @@
 
 ### 🐛 Fixed
 
-1. (Sidepanel)修改标签公司职位占比图表，标签公司职位TOP图表的标签选项可搜索.
+1. (Sidepanel)修改标签公司职位占比图表，标签公司职位 TOP 图表的标签选项可搜索.
 
 ## 2.6.0 (2024-12-25)
 
 ### ⭐ Added
 
-1. (Sidepanel)新增标签公司职位占比图表，标签公司职位TOP图表.
+1. (Sidepanel)新增标签公司职位占比图表，标签公司职位 TOP 图表.
 
 ## 2.5.0 (2024-12-23)
 
@@ -186,24 +190,24 @@
 
 1. (Sidepanel)添加文件管理页面。
 2. 添加任务的最大执行次数限制。
-3. 自动清理历史文件。（当前只保留共10MB历史文件）
+3. 自动清理历史文件。（当前只保留共 10MB 历史文件）
 4. (Sidepanel)添加系统页面(数据库信息展示，数据库调试，历史文件信息)。
 
 ## 2.3.0 (2024-12-21)
 
 ### ⭐ Added
 
-1. (Sidepanel)添加GitHub API计量展示(Core,Graphql)。
+1. (Sidepanel)添加 GitHub API 计量展示(Core,Graphql)。
 1. (Sidepanel)添加职位标签统计图表(主页)。
 
 ### 🐛 Fixed
 
-1. (Sidepanel)修复主页图表默认显示tooltip的问题。
+1. (Sidepanel)修复主页图表默认显示 tooltip 的问题。
 2. (Sidepanel)修复任务修改时会变成新增的问题。
 
 ### 🔗 Build
 
-1. 新增iconify图标离线打包。
+1. 新增 iconify 图标离线打包。
 
 ### 🔨 Dependency
 
@@ -219,7 +223,7 @@
 
 ### ✏️ Changed
 
-1. 更改公司标签，新增sourceType(来源类型)，source（来源）。
+1. 更改公司标签，新增 sourceType(来源类型)，source（来源）。
 
 ## 2.1.1 (2024-12-19)
 
@@ -232,13 +236,13 @@
 ### ⭐ Added
 
 1. (ContentScript)记录职位技能标签，职位福利标签。
-2. 职位标签新增sourceType(来源类型)，source（来源）。
+2. 职位标签新增 sourceType(来源类型)，source（来源）。
 3. 标签新增是否公开选项字段。
 4. (Sidepanel)新增标签管理页。
 
 ### 🐛 Fixed
 
-1. (Sidepanel)修复自动化访问搜索页面时出现的网络错误提示。（执行自动化任务前清理网站的cookies（51JOB））
+1. (Sidepanel)修复自动化访问搜索页面时出现的网络错误提示。（执行自动化任务前清理网站的 cookies（51JOB））
 
 ### 🔨 Dependency
 
@@ -249,7 +253,7 @@
 
 ### 🔗 Build
 
-1. 修复admin页面unocss导入异常的问题
+1. 修复 admin 页面 unocss 导入异常的问题
 
 ### 🔨 Dependency
 
@@ -260,7 +264,7 @@
 ### ✏️ Changed
 
 1. 更新数据共享计划分析图表的布局。
-2. 更换BOSS直聘职位信息API接口（暂无法获得职位发布时间）
+2. 更换 BOSS 直聘职位信息 API 接口（暂无法获得职位发布时间）
 
 ### 🔨 Dependency
 
@@ -283,14 +287,14 @@
 ### ✏️ Changed
 
 1. (ContentScript)将职位信息请求的时机，转移到查询公司信息的时候。以便减少系统封控检查。（猎聘网）。
-2. (ContentScript)右上角的信息展示区，不显示HR的在线信息（猎聘网）。
+2. (ContentScript)右上角的信息展示区，不显示 HR 的在线信息（猎聘网）。
 3. (ContentScript)将职位描述展示的触发覆盖到整个职位卡片区域。
 
 ## 1.32.1 (2024-11-21)
 
 ### 🐛 Fixed
 
-1. (ContentScript)修复重复渲染的问题（BOSS直聘）。
+1. (ContentScript)修复重复渲染的问题（BOSS 直聘）。
 2. (ContentScript)修复公司名为空时外包（教育机构）的判断逻辑。
 
 ## 1.32.0 (2024-11-21)
@@ -298,17 +302,17 @@
 ### ⭐ Added
 
 1. (Sidepanel)首页新增统计图表
-    1. 职位发布时间分析(按月)
-    2. 职位发布时间分析(按周)
-    3. 职位发布时间分析(按日)
-    4. 职位发布时间分析(按小时)
-    5. 职位发布平台分析
-    6. 公司成立年份分段分析
-    7. 公司社保人数分段分析
+   1. 职位发布时间分析(按月)
+   2. 职位发布时间分析(按周)
+   3. 职位发布时间分析(按日)
+   4. 职位发布时间分析(按小时)
+   5. 职位发布平台分析
+   6. 公司成立年份分段分析
+   7. 公司社保人数分段分析
 
 ### ✏️ Changed
 
-1. (Sidepanel)为任务统计图表添加Data Zoom slider。
+1. (Sidepanel)为任务统计图表添加 Data Zoom slider。
 2. (Sidepanel)将最近查看职位移至个人助理-浏览历史。
 
 ## 1.31.0 (2024-11-20)
@@ -320,7 +324,7 @@
 ### 🐛 Fixed
 
 1. (Sidepanel)修复记录上传记录数查询。
-2. (Sidepanel)修复数据文件下载大于1MB文件下载失败的问题。
+2. (Sidepanel)修复数据文件下载大于 1MB 文件下载失败的问题。
 
 ### ✏️ Changed
 
@@ -344,7 +348,7 @@
 
 ### 🔗 Build
 
-1. build脚本使用pnpm进行依赖包安装和构建运行。
+1. build 脚本使用 pnpm 进行依赖包安装和构建运行。
 
 ## 1.30.0 (2024-11-17)
 
@@ -358,7 +362,7 @@
 
 ### 🐛 Fixed
 
-1. (ContentScript)修复BOSS直聘推荐页样式错乱的问题。
+1. (ContentScript)修复 BOSS 直聘推荐页样式错乱的问题。
 
 ## 1.29.2 (2024-11-13)
 
@@ -378,8 +382,8 @@
 
 ### ✏️ Changed
 
-1. (SidePanel)修改主页招聘网站导航的样式（添加平台LOGO）。
-2. (SidePanel)修改地图上职位坐标点的样式（添加平台LOGO）。
+1. (SidePanel)修改主页招聘网站导航的样式（添加平台 LOGO）。
+2. (SidePanel)修改地图上职位坐标点的样式（添加平台 LOGO）。
 
 ## 1.29.0 (2024-10-25)
 
@@ -458,27 +462,27 @@
 
 ### ⭐ Added
 
-1. (SidePanel)新增自动化任务，支持自动浏览职位搜索页（前程无忧，BOSS直聘，智联招聘，拉勾网，猎聘网）。
+1. (SidePanel)新增自动化任务，支持自动浏览职位搜索页（前程无忧，BOSS 直聘，智联招聘，拉勾网，猎聘网）。
 
 ### 🔨 Dependency
 
-1. Add puppeteer-core　^23.0.2
-2. Add vuedraggable　^4.1.0
-3. Add @rollup/plugin-node-resolve　^15.2.3
+1. Add puppeteer-core 　^23.0.2
+2. Add vuedraggable 　^4.1.0
+3. Add @rollup/plugin-node-resolve 　^15.2.3
 
 ## 1.26.1 (2024-08-07)
 
 ### 🐛 Fixed
 
-1. (SidePanel)修复开发者模式的应用流量API缓存问题。
-2. (SidePanel)修复开发者模式的流行内容的Url地址。
+1. (SidePanel)修复开发者模式的应用流量 API 缓存问题。
+2. (SidePanel)修复开发者模式的流行内容的 Url 地址。
 3. (ContentScript)自动检测公司风评（信用中国(北京)黑名单）公司名匹配错误的问题。
 
 ## 1.26.0 (2024-08-06)
 
 ### ⭐ Added
 
-1. (ContentScript)自动检测公司风评，支持IT黑名单 [www.blackdir.com](www.blackdir.com)。
+1. (ContentScript)自动检测公司风评，支持 IT 黑名单 [www.blackdir.com](www.blackdir.com)。
 2. (ContentScript)自动检测公司风评，支持信用中国(北京)黑名单 [creditbj.jxj.beijing.gov.cn](creditbj.jxj.beijing.gov.cn)。
 3. (SidePanel)新增新版本自动检测（主框架）。
 
@@ -517,7 +521,7 @@
 1. (SidePanel)定时刷新统计时，不刷新最近查看职位列表。
 2. (SidePanel)最近查看列表标题样式修改。
 3. (SidePanel)为表格添加加载中样式（最近查看职位，职位偏好列表，职位，公司，公司标签）。
-4. (ContentScript)公司数据过期时间为90天。
+4. (ContentScript)公司数据过期时间为 90 天。
 
 ## 1.23.0 (2024-07-31)
 
@@ -541,7 +545,7 @@
 ### ⭐ Added
 
 1. (SidePanel)新增职位数据全量导出，导入。
-2. (ContentScript)新增BOSS直聘推荐页支持。
+2. (ContentScript)新增 BOSS 直聘推荐页支持。
 
 ### ✏️ Changed
 
@@ -554,19 +558,19 @@
 
 1. (SidePanel)调整最近查看职位样式，职位卡片样式（固定标题宽度），移除职位详情（替换为点击职位名弹出详情，点击公司名弹出详情）。
 2. (SidePanel)职位偏好数据排序为发布时间降序。
-3. (SidePanel)分页每页显示20条数据，换页滚动条置顶。
+3. (SidePanel)分页每页显示 20 条数据，换页滚动条置顶。
 
 ## 1.21.0 (2024-07-26)
 
 ### ⭐ Added
 
 1. (SidePanel)添加个人助理。（职位偏好）
-2. (SidePanel)表格分页添加20条数据每页设置。
+2. (SidePanel)表格分页添加 20 条数据每页设置。
 3. (SidePanel)添加职位卡片（首页，个人助理-职位偏好）。
 
 ### 🐛 Fixed
 
-1. (SidePanel)修复TagInput空Tag赋值失效的问题。
+1. (SidePanel)修复 TagInput 空 Tag 赋值失效的问题。
 
 ### ✏️ Changed
 
@@ -593,7 +597,7 @@
 
 ### 🔗 Build
 
-1. 当创建Tag,自动生成Release并自动上传chrome和firefox安装文件。
+1. 当创建 Tag,自动生成 Release 并自动上传 chrome 和 firefox 安装文件。
 
 ### 🔨 Dependency
 
@@ -657,7 +661,7 @@
 ### 🐛 Fixed
 
 1. (ContentScript)针对某些职位信息公司名不是全称的情况，在查询公司信息时进行补全处理。
-2. (SidePanel)Unmounted页面时，清理定时器。
+2. (SidePanel)Unmounted 页面时，清理定时器。
 3. (SidePanel)修复主页最近查看职位的查询逻辑。
 
 ## 1.16.0 (2024-07-15)
@@ -676,13 +680,13 @@
 
 ### ⭐ Added
 
-1. (Data)新增Config表。
-2. (SidePanel)新增GitHub Oauth登录和GitHub App Install。
-3. 新增manifest key以固定插件id。
+1. (Data)新增 Config 表。
+2. (SidePanel)新增 GitHub Oauth 登录和 GitHub App Install。
+3. 新增 manifest key 以固定插件 id。
 
 ### ✏️ Changed
 
-1. (SidePanel)评论功能底层逻辑替换为GitHub Issues并联动Github App,实现查看公司（职位）评论，添加评论。
+1. (SidePanel)评论功能底层逻辑替换为 GitHub Issues 并联动 Github App,实现查看公司（职位）评论，添加评论。
 
 ### 🔨 Dependency
 
@@ -693,10 +697,10 @@
 ### ⭐ Added
 
 1. (SidePanel)新增主页。（最近查看职位时间线，地图，招聘网站和公司搜索快捷入口）
-2. (SidePanel)显示LOGO。
+2. (SidePanel)显示 LOGO。
 3. (SidePanel)设置页面显示版本号，访问主页，问题反馈。
-4. (SidePanel)Element Plus组件显示中文。
-4. (ContentScript)新增JobItem坐标。（智联招聘)
+4. (SidePanel)Element Plus 组件显示中文。
+5. (ContentScript)新增 JobItem 坐标。（智联招聘)
 
 ### 🔨 Dependency
 
@@ -724,7 +728,7 @@
 
 ### 🐛 Fixed
 
-1. (ContentScript)修复页面样式（前程无忧，BOOS直聘）。
+1. (ContentScript)修复页面样式（前程无忧，BOOS 直聘）。
 
 ## 1.11.0 (2024-07-08)
 
@@ -768,17 +772,17 @@
 
 ### ✏️ Changed
 
-1. (ContentScript)移除sidePanel，将管理页移动到tab页上。
-2. (ContentScript)处理发布时间时，将结果转换为Date对象，避免在firefox报clone undefined异常。
+1. (ContentScript)移除 sidePanel，将管理页移动到 tab 页上。
+2. (ContentScript)处理发布时间时，将结果转换为 Date 对象，避免在 firefox 报 clone undefined 异常。
 
 ### 🛀 Refactor
 
-1. (build)修改chrome编译目录为dist-chrome，firefox编译目录为dist-firefox
-2. (build)修改ci脚本，为tag自动生成编译后的产物([chrome][firefox])-xx.xx.xx分支
+1. (build)修改 chrome 编译目录为 dist-chrome，firefox 编译目录为 dist-firefox
+2. (build)修改 ci 脚本，为 tag 自动生成编译后的产物([chrome][firefox])-xx.xx.xx 分支
 
 ### ⚙️ Chore
 
-1. (devtool)新增chrome和firefox快速启动并加载插件的命令:`start:firefox`和`start:chrome`(备注：每次启动该会自动清理数据库)
+1. (devtool)新增 chrome 和 firefox 快速启动并加载插件的命令:`start:firefox`和`start:chrome`(备注：每次启动该会自动清理数据库)
 
 ### 🔨 Dependency
 
@@ -793,7 +797,7 @@
 
 ### 🛀 Refactor
 
-1. (OffScreen)重构Offscreen的代码，拆分woker.js的业务功能。
+1. (OffScreen)重构 Offscreen 的代码，拆分 woker.js 的业务功能。
 
 ## 1.7.0 (2024-06-21)
 
@@ -809,13 +813,13 @@
 
 ### ⭐ Added
 
-1. (ContentScript)自动检测公司风评📡，当前实现：若比邻黑名单。
+1. (ContentScript)自动检测公司风评 📡，当前实现：若比邻黑名单。
 2. (ContentScript)快捷查询公司信息（政府渠道）。
-3. (ContentScript)自动快速查询公司信息（BOSS直聘需手动点击查询）。
+3. (ContentScript)自动快速查询公司信息（BOSS 直聘需手动点击查询）。
 
 ### ✏️ Changed
 
-1. (SidePanel)补全统计薪酬区间职位数的<3k,3k-6k的区间显示。
+1. (SidePanel)补全统计薪酬区间职位数的<3k,3k-6k 的区间显示。
 
 ## 1.5.0 (2024-06-06)
 
@@ -827,20 +831,20 @@
 ### ✏️ Changed
 
 1. (SidePanel)修改表格排序为远程排序。
-2. (SidePanel)新增Job Record时，对为空串的内容设置为NULL。
+2. (SidePanel)新增 Job Record 时，对为空串的内容设置为 NULL。
 
 ### 🐛 Fixed
 
-1. (ContentScript)修复智联招聘Job List元素查找路径。
+1. (ContentScript)修复智联招聘 Job List 元素查找路径。
 
 ### 🚀 Performance
 
-1. (build)将webpack替换为vite，加快开发期间的编译速度。
+1. (build)将 webpack 替换为 vite，加快开发期间的编译速度。
 
 ### 🛀 Refactor
 
-1. 重构项目的目录结构，根据Chrome Extension的概念进行分类:background,contentScript,offscreen,sidepanel。
-2. 使用vite-plugin-web-extension进行插件编译的管理。
+1. 重构项目的目录结构，根据 Chrome Extension 的概念进行分类:background,contentScript,offscreen,sidepanel。
+2. 使用 vite-plugin-web-extension 进行插件编译的管理。
 
 ## 1.4.0 (2024-06-01)
 
@@ -854,45 +858,45 @@
 
 ### 🚀 Performance
 
-1. (build)生产环境不生成source map。
+1. (build)生产环境不生成 source map。
 
 ### 🔨 Dependency
 
-1. 新增crypto-js ^4.2.0
+1. 新增 crypto-js ^4.2.0
 
 ## 1.3.0 (2024-05-31)
 
 ### ⭐ Added
 
 1. (ContentScript)快捷查询公司信息，支持（小红书，脉脉，必应，Google，爱企查）。
-2. (ContentScript)在职位卡片下显示应用LOGO。
+2. (ContentScript)在职位卡片下显示应用 LOGO。
 
 ### ✏️ Changed
 
 1. (ContentScript)将展示次数移动到职位卡片的功能框里。
-2. (SidePanel)修改job item browse的显示文案。
+2. (SidePanel)修改 job item browse 的显示文案。
 
 ### 🛀 Refactor
 
-1. (ContentScript)重构timeTag的渲染代码和promise的使用。
+1. (ContentScript)重构 timeTag 的渲染代码和 promise 的使用。
 
 ### 📔 Documentation
 
 1. 修改运行截图
 2. 新增浏览器支持
-3. 新增Release版本安装说明
+3. 新增 Release 版本安装说明
 
 ## 1.2.0 (2024-05-31)
 
 ### ⭐ Added
 
-1. (ContentScript)BOSS招聘的职位显示顺序根据HR活跃时间进行排列。
+1. (ContentScript)BOSS 招聘的职位显示顺序根据 HR 活跃时间进行排列。
 
 ## 1.1.1 (2024-05-30)
 
 ### 🐛 Fixed
 
-1. (Data)修复Jobsdb的Id标识。
+1. (Data)修复 Jobsdb 的 Id 标识。
 
 ### 📔 Documentation
 
@@ -905,7 +909,7 @@
 1. (SidePanel)管理页面回到顶部按钮。
 2. (SidePanel)管理页面搜索表格新增列：最低薪资，最高薪资，几薪，学历。
 3. (SidePanel)管理页面搜索表格新增排序列：首次浏览日期，发布日期，最低薪资，最高薪资，几薪，学历。
-4. (ContentScript)显示职位发布时间与自动排序（支持jobsdb-hk）。
+4. (ContentScript)显示职位发布时间与自动排序（支持 jobsdb-hk）。
 
 ### ✏️ Changed
 
@@ -913,13 +917,13 @@
 
 ### 🐛 Fixed
 
-1. (Data)修复BOSS直聘按天算的薪资记录逻辑。
+1. (Data)修复 BOSS 直聘按天算的薪资记录逻辑。
 
 ## 1.0.0 (2024-05-29)
 
 ### ⭐ Added
 
-1. (ContentScript)显示职位发布时间与自动排序（支持BOSS,51Job,智联,拉钩）。
+1. (ContentScript)显示职位发布时间与自动排序（支持 BOSS,51Job,智联,拉钩）。
 2. (ContentScript)显示外包公司和培训机构。
 3. (ContentScript)职位评论。
 4. (SidePanel)新增本地显示职位初次浏览时间，历史浏览次数。
