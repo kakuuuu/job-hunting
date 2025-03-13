@@ -1,3 +1,132 @@
+## 3.7.4 (2025-03-13)
+
+### ⚠️ Noteworthy
+
+- 为了避免违反相关法律法规，请关闭数据共享计划，并将相关的job-hunting-data仓库关闭（或删除）
+
+### 🩹 Fixes
+
+- 补充免责声明和风险操作提示
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+
+## 3.7.3 (2025-03-13)
+
+### 🩹 Fixes
+
+- 修改招聘平台职位卡片标签候选项显示逻辑
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+- qq530402037 @qq530402037
+
+## 3.7.2 (2025-03-12)
+
+### 🩹 Fixes
+
+- 调整招聘平台职位卡片显示（突出职位初见时间，修改排序逻辑）
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+- qq530402037 @qq530402037
+
+## 3.7.1 (2025-03-12)
+
+### 🩹 Fixes
+
+- 修复讨论区的地区空白选项导致白屏的问题
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+- lsy632 @lsy632
+
+## 3.7.0 (2025-03-07)
+
+### 🚀 Features
+
+- 后台管理页面新增职位分析(职位偏好页，职位浏览历史页)
+
+### 🩹 Fixes
+
+- 调整职位分析设置中的页面配置
+- 更新类库依赖版本，特别地针对wxt（security）
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+
+## 3.6.0 (2025-02-28)
+
+### 🚀 Features
+
+- 新增职位分析 - 人工智能厂商接口（OpenAI协议）
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+
+## 3.5.0 (2025-02-27)
+
+### 🚀 Features
+
+- 新增职位分析功能（支持大模型本地部署软件**OLLAMA**，大模型接入厂商**Siliconflow(硅基流动)**）
+
+### 🩹 Fixes
+
+- 修复jobsdb招聘网站插件不显示的问题
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+
+## 3.4.4 (2025-02-27)
+
+### 🩹 Fixes
+
+- 修复打开智联招聘职位搜索页面时不触发职位解析的问题
+- 避免智联招聘的风控检测（移除详情页的访问，不获取职位的经纬度信息）
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+
+## 3.4.3 (2025-02-21)
+
+### 🩹 Fixes
+
+- 新增e2e tests(base on playwright-bdd)
+- 提升程序启动的稳定性(对Bridge进行重试)
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+
+## 3.4.2 (2025-02-20)
+
+### 🩹 Fixes
+
+- 修复数据导入导出（包括共享计划的上传和同步）的日期字段内容错误问题
+
+### ❤️ Thank You
+
+- lastsunday @lastsunday
+
+## 3.4.1 (2025-02-20)
+
+### 🩹 Fixes
+
+- 调整插件安装文件的内部目录结构，使其可直接安装（通过直接拖动zip文件到浏览器扩展页面的方式进行安装）
+
+### ❤️ Thank You
+
+- kakuuuu @kakuuuu
+- lastsunday @lastsunday
+
 ## 3.4.0 (2025-02-19)
 
 ### 🚀 Features
